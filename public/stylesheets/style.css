@@ -1,0 +1,176 @@
+/*sets padding with 50px, and adds a arial font of 14px*/
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+/*sets the footer to be fixed, removes the left and bottom margin, sets the footer to take up 100% of he bottom,
+sets the background color to be light gray, aligns the text to the left, displays the elements as type-flex, and removes wrapping*/
+.flex-container   {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightgray;
+  text-align: left;
+  display: flex;
+  flex-wrap: nowrap;
+}
+/*sets each div within the footer to be gray, adds a width of 115px, a padding of 1px for left and right, 
+and 2px for top and bottom, adds a margin of 7px, aligns text to center, a line height of 15px, sets font size to 11px,
+rounds the border of each element and sets the text to black*/
+.flex-container > div{
+  background-color: gray;
+  width: 115px;
+  padding: 1px 2px;
+  margin: 7px;
+  text-align: center;
+  line-height: 15px;
+  font-size: 11px;
+  border-radius: 15px;
+  color: black;
+}
+/*Removes bullet points, margin, and padding from the nav bar, adds an overflow: hidden variable to
+remove any overflowing text in order to prevent text from ending up where it shouldn't, sets the background color to dark gray,
+and rounds the borders*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 15px;
+}
+/*Floats all elements to the left side of the nav bar*/
+li {
+  float: left;
+}
+/*Sets the navbar as a block-type display, sets the text color as white, teh background color as light-gray,
+aligns each elements text to the center, pads each element with 10px for left and right, and 12px for top and bottom,
+sets a margin around it for 10px, removes the underline for each view link to be removed, and rounds the borders*/
+li a {
+  display: block;
+  color: white;
+  background-color: darkgray;
+  text-align: center;
+  padding: 10px 12px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 15px;
+}
+/*When hovered over, each element is highlighted in a darker shade of gray*/
+li a:hover {
+  background-color: #111;
+}
+/*Rounds the borders of the image*/
+img{
+  border-radius: 15px;
+}
+/*Sets the selfie and pets ids as a grid, and sets the columns to auto*/
+#Selfie{
+  width: 800px;
+}
+/*Pets additionally centers the text for each label, bolds, and increases the size of the font*/
+#Pets{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+/*Sets the background color of all views to a light shade of gray*/
+#mainBackground{
+  background-color:rgb(228, 228, 228);
+}
+/*Adds 10px of padding to each grid item*/
+.grid-item{
+  padding: 10px;
+}
+/*gives each grid item a specific label, displays the element as a grid, sets the template for a 3x5, 
+puts a 15px gap between each row, sets the background color to black, adds a 15px padding, rounds the borders,
+centers the  items, margins the item, and removes the sides in order to center the item within the grid*/
+/*Addendum: Added an animated gradient to the background of the grid.*/
+.grid-item1{grid-area: header;}
+.grid-item2{grid-area: label1;}
+.grid-item3{grid-area: email;}
+.grid-item4{grid-area: label2;}
+.grid-item5{grid-area: number;}
+#Contact{
+  display: grid;
+  grid-template-areas:
+  'header header header'
+  'label1 label1 label1'
+  'email email email'
+  'label2 label2 label2'
+  'number number number'; 
+  gap: 15px;
+  background: linear-gradient(35deg, #060404, #4e2610, #62230d, #3f1e01);
+  padding: 15px;
+  border-radius: 15px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 400px;
+  animation: gradient1 5s ease infinite;
+  background-size: 400% 400%;
+}
+/*Centers both the label and bio in the aboutMe page*/
+#bio{
+  justify-content: center;
+  width: 800px;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 10px;  
+}
+#bioLabel{
+  justify-content: center;
+  margin: 0 auto;
+  width: 1200px;
+  font-weight: bold;
+}
+/*sets the background color of each item to light gray, centers the text, adds padding, rounds the borders,
+and changes the width of each item to 350px*/
+#Contact > div {
+  background-color: lightgray;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 15px;
+  width: 350px;
+}
+/*each grid item is changed in font size, and changed in weight and style*/
+.grid-item1{
+  font-size: 22px;
+  font-weight: bolder;
+}
+.grid-item2{
+  font-size: 18px;
+  font-weight: bold;
+}
+.grid-item3{
+  font-size: 14px;
+  font-style: italic;
+}
+.grid-item4{
+  font-size: 18px ;
+  font-weight: bold;
+}
+.grid-item5{
+  font-size: 14px;
+  font-style: italic;
+}
+/*Creates a gradient that is slowly adjusted in position, which combined with an animation variable*/
+@keyframes gradient1 {
+  0%{
+    background-position: 0% 50%;
+  }
+  25%{
+    background-position: 50% 100%;
+  }
+  50%{
+    background-position: 100% 0%;
+  }
+  75%{
+    background-position: 0% 50%;
+  }
+  100%{
+    background-position: 50% 100%;
+  }
+}
