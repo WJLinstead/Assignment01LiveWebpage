@@ -254,4 +254,13 @@ width and height*/
   width: 420px;
   height: 360px;
 }
-
+/*centres, italizes and shrinks the font under the contact div*/
+#finePrint{
+  text-align: center;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+  font-size: 12px;
+  padding: 5px;
+}
