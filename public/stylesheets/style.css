@@ -4,13 +4,13 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 /*sets the footer to be fixed, removes the left and bottom margin, sets the footer to take up 100% of he bottom,
-sets the background color to be light gray, aligns the text to the left, displays the elements as type-flex, and removes wrapping*/
+sets the background to be a changing transparent gray gradient, aligns the text to the left, displays the elements as type-flex, and removes wrapping*/
 .flex-container   {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: lightgray;
+  background: linear-gradient(-90deg, transparent, gray);
   text-align: left;
   display: flex;
   flex-wrap: nowrap;
@@ -112,7 +112,7 @@ centers the  items, margins the item, and removes the sides in order to center t
   animation: gradient1 5s ease infinite;
   background-size: 400% 400%;
 }
-/*Centers both the label and bio in the aboutMe page*/
+/*Centers both the bioLabel and bio  texts in the aboutMe page*/
 #bio{
   justify-content: center;
   width: 800px;
@@ -174,3 +174,84 @@ and changes the width of each item to 350px*/
     background-position: 50% 100%;
   }
 }
+/*Centers the intro, and intro label as well as changes the style and size*/
+#intro{
+  justify-content: center;
+  width: 800px;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 10px;  
+}
+#introLabel{
+  justify-content: center;
+  margin: 0 auto;
+  width: 200px;
+  font-weight: bold;
+}
+/*Centres the selfie pic on the home page*/
+#mugshot{
+  display: block  ;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+/*Centres and emboldens the header for the projects page*/
+#projectsLabel{
+  justify-content: center;
+  margin: 0 auto;
+  width: 900px;
+  font-weight: bold;
+}
+/*Sets up the grid for the project 1 row, and centres the grid*/
+#project1{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 30px;
+}
+/*rounds the corners of each div within the grid, and centres the text*/
+#project1 > div {
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 15px;
+  width: 420px;
+}
+/*adds a background color to the text, and shortens the height of the text box*/
+#projectGridItem1{
+  background-color: rgb(255, 246, 235);
+  border-radius: 15px;
+  height: 360px;
+  font-weight: normal;
+}
+/*Sets up the grid for the password cracker application, centres the grid, and gives it a padding
+to give a visible gap of the two project grids*/
+#project2{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 30px;
+}
+/*Adds a background color to the text, sets font weight to normal, as well as shortens the height of the text*/
+#project2GridItem2{
+  background-color: rgb(255, 246, 235);
+  font-weight: normal;
+  text-align: center;
+  height: 340px;
+}
+/*adds 20px of padding to the divs within the project 2 grid, and modifies each divs 
+width and height*/
+#project2 > div {
+  padding: 20px;
+  border-radius: 15px;
+  width: 420px;
+  height: 360px;
+}
+

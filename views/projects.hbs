@@ -4,9 +4,29 @@
     <title>{{title}}</title>
   </head>
   <body>
-    <div>
-        <p>Hello, this is the projects page!</p>
-    </div>
+    
+        <h1 id="projectsLabel">What Projects Have I Worked On In The Past?</h1>
+        <div class="grid-container" id="project1">
+        <div class="grid-item" id="projectGridItem1"><p id="projectDesc">In the past, I have worked on a few projects, with the first one being
+          programmed in the language of C#.  The project was a simple text scrawler, which would 
+          have the program give a prompt, the user would then give an input, and then the computer
+          would give back a response, and then another prompt to continue the game.  That loop would then continue until
+          one of two conditions were met, either the player runs out of health, or the allocated turns 
+          were used up, which would then tell the program to give an end screen to the player, and ask if 
+          they would like to try again
+        </p></div>
+        <div class="grid-item" id="projectGridItem2"><img src="/images/entrance.jpg" alt="Entrance" width="360px" height="600px"></div>
+        </div>
+
+        <div class="grid-container" id="project2">
+          <div class="grid-item" id="project2GridItem1"><img src="/images/lock.jpg" alt="Entrance" width="360px" height="300px"></div>
+          <div class="grid-item" id="project2GridItem2"><p id="projectDesc">After that, a smaller project I made in python, 
+            was a simple password cracker, where if I would create a password, then store that password as a string. Following that, the program would
+            then continuously guess unique strings of letters and numbers, up to 15 characters, and it would not guess the same one twice,
+            due to each guess being added temporarily to a spread sheet.  Once the program guessed the password,
+            the program would clear the spreadsheet and notify the user of the success.
+          </p></div>
+        </div>
     {{{body}}}  
   </body>
 </html>
